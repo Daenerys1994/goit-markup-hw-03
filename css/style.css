@@ -29,6 +29,16 @@ body {
     background-color: var(--main-bg-color);
     margin: 0;
 }
+.container{
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.container-nav {
+    display: flex;
+    align-items : center;
+}
 
 button
 {
@@ -59,24 +69,18 @@ button
 }
 
 .header {
-   width: 1440px;
-   height: 72px;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   padding-left: 156px;
-   padding-right: 156px;
-   margin: 0 auto;
    background-color: var(--main-bg-color);
    border-bottom: 1px solid var(--footer-text-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-navigation {
-    top: 24px;
-    margin:0;
+  
+    margin-right: auto;
     display: flex;
     align-items: center;
-    gap: 76px;
+    
 }
 
 .logo {
@@ -90,6 +94,7 @@ button
    text-decoration: none;
    display: flex;
    align-items: center;
+   margin-right: 76px;
 }
 .accent{
    font-family: 'Raleway';
@@ -168,19 +173,18 @@ button
    
 
 }
-.main-content-title{
+.main-hero-title{
     font-weight: 700;
     font-size: 56px;
     line-height: 60px;
     letter-spacing: 0.02em;
     color: var(--main-bg-color);
-    max-width: 500px;
-    margin-top: 0;
-    margin-bottom: 48px;
+    width: 507px;
+    margin: 0 auto;
     text-align: center;
 } 
 
-.order-service { 
+.hero-button { 
     display: flex;
     background: var(--btn-text-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -192,6 +196,11 @@ button
     line-height: 1.5;
     align-items: center;
     letter-spacing: 0.04em;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    margin-top: 48px;
+    font-weight: 500;
+
 
     
     
@@ -230,12 +239,12 @@ button
 }
 
 .advantages-title {
-    /*font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    color: var(--main-text-color);*/
+   
     margin: 0;
     margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--main-text-color);
+    
 }
 .advantages-descr {
     font-size: 16px;
@@ -294,6 +303,7 @@ button
     color: var(--main-text-color);
     text-align: center;
     margin: 32px 0 8px;
+    font-weight: 500;
 
 }
 .team-prof{
@@ -332,11 +342,6 @@ button
     
 }
 /* ------------------------------------------------------------------------------------- */
-.main-button
-{
-    padding-top: 96px;
-    padding-bottom: 120px;
-}
 
 .wrapper {
     display: flex;
@@ -370,30 +375,13 @@ button
     color: var(--btn-text-color-activ);
 }
 
-
-.main-portfolio
-{
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 24px;
-
-    list-style-type: none;
-}
-.picture-item{
-    /* text-align: center; */
-    background: var(--main-bg-color);
-    border: 1px solid var(--footer-text-color);
-    
-
-}
 .main-picture-title{ 
     font-size: 20px;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
     padding-left: 16px;
     margin: 32px 0 8px 0;
+    font-weight: 500;
     
 
     
@@ -405,3 +393,34 @@ button
     font-size: 16px;
     color: var(--second-text-color);
 }  
+.services-list-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 32px 16px;
+    gap: 8px;
+    
+}
+.hero{
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+
+.main-portfolio {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    list-style-type: none; 
+    padding: 0;
+    
+}
+.picture-item {
+    border-bottom: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+    border-left: 1px solid #E7E9FC;
+    width: calc((100% - 48px) / 3);
+}
