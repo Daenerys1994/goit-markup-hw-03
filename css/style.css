@@ -108,7 +108,6 @@ button
 .header-list {
    display: flex;
    align-items: center;
-   padding: 0;
    gap: 40px;
    font-weight: 500;
    
@@ -153,8 +152,10 @@ button
 /* -----------------------------------------MAIN */
 
 .section {
+    padding: 120px 0 120px 0;
+    margin: 0 auto;
     width: 100%;
-    margin: 0 auto
+     
 }
 .main{
     display: flex;
@@ -163,12 +164,13 @@ button
 }
 /* Bottom */
 .main-content-section{
-    height: 600px;
+    padding-top: 180px;
+    padding-bottom: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 120px;
+   
     background: var(--main-text-color);
    
 
@@ -222,9 +224,8 @@ button
 
 .main-advantages{
    display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin-bottom: 120px;
+  
+ 
 }
 .main-advantages-list{
    display: flex; 
@@ -269,7 +270,7 @@ button
     display: flex;
     justify-content: center;
     gap: 24px;
-    margin-bottom: 120px;
+    
 }
 /* TEAM */
 .main-team {
@@ -317,7 +318,7 @@ button
 /* -----------------------------------------FOOTER */
 .footer-background{
     background: var(--main-text-color);
-    padding: 100px 156px 100px;
+    padding: 100px 0;
 }
 .logo-footer{
     font-family: 'Raleway';
@@ -337,8 +338,9 @@ button
     color: var(--footer-text-color);
     max-width: 264px;
     margin: 0;
-    padding-top: 16px;
+    margin-top: 16px;
     font-weight: 400;
+
     
 }
 /* ------------------------------------------------------------------------------------- */
@@ -348,6 +350,7 @@ button
     justify-content: center;
     gap: 24px;
     margin: 0 0 72px;
+    
 }
 .wrapper button:not(:last-child) {
     margin-right: 20px;
@@ -366,6 +369,7 @@ button
     border: 1px solid var(--footer-text-color);
     border-radius: 4px;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    margin-bottom: 72px;
 }
 
 .filter-btn:hover,
@@ -380,21 +384,15 @@ button
     letter-spacing: 0.02em;
     color: var(--main-text-color);
     padding-left: 16px;
-    margin: 32px 0 8px 0;
-    font-weight: 500;
-    
-
-    
+    font-weight: 500;  
 }
 .main-picture-text{
     margin: 0  ;
-    padding: 0 0 32px 16px;
     letter-spacing: 0.02em;
     font-size: 16px;
     color: var(--second-text-color);
 }  
 .services-list-wrap{
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -413,7 +411,7 @@ button
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
+    gap: 48px 24px;
     list-style-type: none; 
     padding: 0;
     
@@ -423,4 +421,14 @@ button
     border-right: 1px solid #E7E9FC;
     border-left: 1px solid #E7E9FC;
     width: calc((100% - 48px) / 3);
+}
+.list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
